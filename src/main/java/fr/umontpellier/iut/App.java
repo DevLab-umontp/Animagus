@@ -9,7 +9,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
  * Hello world!
  *
  */
-public class App extends ListenerAdapter {
+public class App{
     public static void main(String[] args) {
         JDABuilder builder = new JDABuilder(AccountType.BOT)
                 .setToken(${{ secrets.DISCORD_TOKEN }});
