@@ -16,8 +16,12 @@ public class GestionnaireMessages extends ListenerAdapter {
         MessageChannel channel = event.getChannel();
         out.println(String.format("Message reçue de la part de %s : %s", auteur.getName(), messageRecue));
 
-        if (!auteur.isBot() && messageRecue.charAt(0) == '&')
-            channel.sendFile(GestionnaireImages.getImage(messageRecue)).queue();
+        if (!auteur.isBot() && messageRecue.charAt(0) == '&') {
+            if (messageRecue.subSequence(1, 3).equals("add"))
+                channel.sendMessage(UploadImage.getLink(messageRecue));
+            else
+                channel.sendFile(GestionnaireImages.getImage(messageRecue)).queue();
+        }
 
     }
 }
