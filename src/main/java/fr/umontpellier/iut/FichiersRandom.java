@@ -4,14 +4,14 @@ import java.io.File;
 import java.util.Random;
 
 public class FichiersRandom {
-    private final File[] files;
+    private final File[] fichiers;
 
     public FichiersRandom(File repertoire) {
-        this.files = repertoire.listFiles();
+        this.fichiers = repertoire.listFiles();
     }
 
-	public File getFichier() {
-        return files[new Random().nextInt(files.length)];
+	public File getFichierRandom() {
+        return fichiers[new Random().nextInt(fichiers.length)];
     }
 
 }

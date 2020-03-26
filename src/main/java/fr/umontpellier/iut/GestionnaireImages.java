@@ -14,7 +14,7 @@ public class GestionnaireImages {
     }
 
     public static File getImage(String messageRecue) {
-        return repertoireAnimaux.get(messageRecue.substring(1).toLowerCase()).getFichier();
+        return repertoireAnimaux.get(messageRecue.substring(1).toLowerCase()).getFichierRandom();
     }
 
     private GestionnaireImages() {
