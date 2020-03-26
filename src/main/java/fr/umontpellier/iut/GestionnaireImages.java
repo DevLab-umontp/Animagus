@@ -5,16 +5,16 @@ import java.util.HashMap;
 
 public class GestionnaireImages {
 
-    private static HashMap<String, FichiersRandom> repertoireAnimeaux = new HashMap<>();
+    private static HashMap<String, FichiersRandom> repertoireAnimaux = new HashMap<>();
 
     static {
-        for (File typeAnimal : new File("./images/animeaux/").listFiles())
-            if (typeAnimal.isDirectory())
-                repertoireAnimeaux.put(typeAnimal.getName(), new FichiersRandom(typeAnimal));
+        for (File especeAnimal : new File("./images/animaux/").listFiles())
+            if (especeAnimal.isDirectory())
+                repertoireAnimaux.put(especeAnimal.getName(), new FichiersRandom(especeAnimal));
     }
 
     public static File getImage(String messageRecue) {
-        return repertoireAnimeaux.get(messageRecue.substring(1).toLowerCase()).getFichier();
+        return repertoireAnimaux.get(messageRecue.substring(1).toLowerCase()).getFichier();
     }
 
     private GestionnaireImages() {
