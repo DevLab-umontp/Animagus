@@ -19,7 +19,7 @@ Bon nous ne chercherons pas un sofa, mais bien un animal, effectuez la recherche
 
 ### Deuxième étape : Rendez-vous sur le repertoire GitHub
 
-Pour déposer l'image nous nous rendrons à l'URL suivante https://github.com/MathieuSoysal/Animagus.umontp/tree/master/images/animaux, attendez la prochaine étape avant d'y aller.
+Pour déposer l'image nous nous rendrons à l'URL suivante https://github.com/MathieuSoysal/Animagus.umontp/tree/master/images/animaux.
 
 ### Troisième étape : Déposé l'image/gif sur le repertoire GitHub
 
