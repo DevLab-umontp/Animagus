@@ -12,7 +12,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 public class App{
     public static void main(String[] args) {
         JDABuilder builder = new JDABuilder(AccountType.BOT)
-                .setToken(${{ secrets.DISCORD_TOKEN }});
+                .setToken("NjkyMzk3MTM4MjY4NjUxNTYy.XnwTSg.gBlqAYCwYSQJCjsSjSMj18d-xug");
         builder.addEventListeners(new GestionnaireMessages());
         login(builder);
     }
