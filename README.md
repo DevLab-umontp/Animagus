@@ -23,7 +23,10 @@ Pour déposer l'image nous nous rendrons à l'URL suivante https://github.com/Ma
 
 ### Troisième étape : Déposé l'image/gif sur le repertoire GitHub
 
-**Si vous voyez le nom de votre animal** c'est nickel il vous suffira juste de cliquer sur celui-ci et de déposer le fichier via le bouton "Upload files" ![](ressources/upload-files.png)
+**Si vous voyez le nom de votre animal** c'est nickel il vous suffira juste de cliquer sur celui-ci et de déposer le fichier via le bouton "Upload files"
+
+![](ressources/upload-files.png)
+
 
 **Sinon** pas de soucie, il faut simplement mettre la photo dans un dossier (nommé avec le nom de l'animal choisi) et de déposer le dossier directement dans le répertoire [Animaux/](https://github.com/MathieuSoysal/Animagus.umontp/upload/master/images/animaux) cliquer sur le lien pour aller plus vite.
 
