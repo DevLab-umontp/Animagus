@@ -3,10 +3,11 @@
 * **Colaborateurs:** [étudiants du département informatique](https://iut-montpellier-sete.edu.umontpellier.fr/dut-informatique/)
 
 ## Présentation
-Inspiré du sort [*animagus*](https://harrypotter.fandom.com/fr/wiki/Animagus) d'Harry Poter, ce bot discord vous feras redécouvrir l'humour caché des animaux. Certains animaux peuvent être immenses, imposants, sinistres voire même terrifiants. Mais n'ayez crainte ! Animagus.umonpt est là !
+Inspiré du sort [*animagus*](https://harrypotter.fandom.com/fr/wiki/Animagus) d'Harry Poter, ce bot discord vous feras redécouvrir l'humour caché des animaux. Certains animaux peuvent être immenses, imposants, sinistres voire même terrifiants. Mais n'ayez crainte ! Animagus.umonpt est là ! 
 
 ![](https://media.giphy.com/media/3oz8xQQP4ahKiyuxHy/giphy.gif)
 
+[Cilquez ici pour l'invité sur le votre serveur !](https://discordapp.com/oauth2/authorize?client_id=692397138268651562&scope=bot&permissions=0)
 ## Comment contribuer facilement 
 
 Vous avez déjà croisé une photo/gif libre de droits d'animale drôle ? Hilarant ? Bah parfait ! Vous pouvez la déposer ici pour pouvoir la partager votre trouvaille avec les autres voici comment faire.
