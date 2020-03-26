@@ -8,7 +8,7 @@ Inspiré du sort [*animagus*](https://harrypotter.fandom.com/fr/wiki/Animagus) d
 
 ![](https://media.giphy.com/media/3oz8xQQP4ahKiyuxHy/giphy.gif)
 
-[Cilquez ici pour l'invité sur le votre serveur !](https://discordapp.com/oauth2/authorize?client_id=692397138268651562&scope=bot&permissions=0)
+[Cilquez ici pour l'inviter sur votre serveur !](https://discordapp.com/oauth2/authorize?client_id=692397138268651562&scope=bot&permissions=0)
 ## Comment contribuer facilement 
 
 Vous avez déjà croisé une photo/gif libre de droits d'animale drôle ? Hilarant ? Bah parfait ! Vous pouvez la déposer ici pour pouvoir la partager votre trouvaille avec les autres voici comment faire.
@@ -17,7 +17,7 @@ Vous avez déjà croisé une photo/gif libre de droits d'animale drôle ? Hilara
 
 ![](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsearchengineland.com%2Ffigz%2Fwp-content%2Fseloads%2F2016%2F05%2Fgoogle-plas-image-search.gif&f=1&nofb=1)
 
-Bon nous ne chercherons pas un sofa, mais bien un animal, effectuez la recherche de votre animal favori et choisissez l'une des photos libres de droit qui vous ont plu. Puis enregistré la sur votre ordinateur.
+Bon nous ne recherons pas un sofa, mais bien un animal, effectuez la recherche de votre animal favori et choisissez l'une des photos libres de droit qui vous ont plu. Puis enregistré la sur votre ordinateur.
 
 ### Deuxième étape : Ajouter l'image à la bibliothèque du bot
 
@@ -28,4 +28,4 @@ Pour cela rendez-vous sur le serveur discord dans le quelle se trouve [(s'il est
 
 
 ### Finish !!
-Vous avez plus qu'à appuyer sur tous les boutons verts ! Félicitation pour ce premier commit sur le projet ! Le bot se chargera de se mettre à jour et ajouter votre nouvelle image à sa bibliothèque 😎 N'hésitez à faire un tour dans le code !
+Vous avez plus qu'à appuyer sur tous les boutons verts ! Félicitation pour ce premier commit sur le projet ! Le bot se chargera de se mettre à jour et ajouter votre nouvelle image à sa bibliothèque, une fois que deux de nos contributeurs auront validé votre requête (il suffit de les avoir fait sourire) 😉 N'hésitez à faire un tour dans le code !
