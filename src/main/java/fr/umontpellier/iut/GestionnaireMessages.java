@@ -9,7 +9,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class GestionnaireMessages extends ListenerAdapter {
 
-    private static String commandes = "Voici les commandes *Animagus* disponibles :\n **-** `&{votre animal}` : par exemple `&chien` pour afficher l'image d'un chien.\n **-** `&add {votre animal}` : par exemple `&add souris` pour ajouter l'image d'une souris.\n";
+    private static String commandes = "**Voici les commandes *Animagus* disponibles :**\n ► `&{votre animal}` : par exemple `&chien` pour afficher l'image d'un chien.\n ► `&add {votre animal}` : par exemple `&add souris` pour ajouter l'image d'une souris.\n";
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
