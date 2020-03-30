@@ -1,8 +1,15 @@
-package fr.umontpellier.iut;
+package fr.umontpellier.iut.commandes;
 
 import java.util.Random;
 
-public class UploadImage {
+import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
+
+/**
+ * Add
+ */
+class Add extends ListenerAdapter implements Commande {
+
     static final String[] ICONES_ANIMAUX = { "🐵", "🐶", "🐺", "🐱", "🦁", "🐯", "🦒", "🦊", "🦝", "🐮", "🐷", "🐗",
             "🐭", "🐹", "🐰", "🐻", "🐨", "🐼", "🐸", "🦓", "🐴", "🦄", "🐔", "🦧", "🦮", "🐕‍🦺", "🐩", "🐕", "🐈",
             "🐅", "🐆", "🐎", "🦌", "🦏", "🦛", "🐂", "🐃", "🐄", "🐖", "🐏", "🐑", "🐐", "🐪", "🐫", "🦙", "🦘", "🦥",
@@ -13,11 +20,18 @@ public class UploadImage {
     public static String getLien(String messageRecue) {
         String animalChoisi = messageRecue.substring(5).toLowerCase();
         return String.format(
-                "Clic sur le lien pour ajouter ton image de %s marrant %s  %s  %s  :\n 📎 https://github.com/MathieuSoysal/Animagus.umontp/upload/master/images/animaux/%s \n",
+                "Clic sur le lien pour ajouter ton image de %s %s  %s  %s  :\n 📎 https://github.com/MathieuSoysal/Animagus.umontp/upload/master/images/animaux/%s \n",
                 animalChoisi, getRandomIcone(), getRandomIcone(), getRandomIcone(), animalChoisi);
     }
 
     private static String getRandomIcone() {
         return ICONES_ANIMAUX[new Random().nextInt(ICONES_ANIMAUX.length)];
     }
+
+    @Override
+    public void execute(Message messageRecue) {
+        messageRecue.getChannel().sendMessage(getLien(messageRecue.getContentRaw())).queue();
+
+    }
+
 }
