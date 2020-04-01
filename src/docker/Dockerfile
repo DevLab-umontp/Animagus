@@ -4,7 +4,7 @@ WORKDIR /workspace
 COPY pom.xml /workspace
 COPY images workspace/images
 COPY src /workspace/src
-RUN mvn -B -f pom.xml clean compile assembly:single -DskipTests 
+RUN mvn clean compile assembly:single -DskipTests 
 
 FROM openjdk:8-jdk-slim
 COPY --from=build /workspace/target/Animagus-1.0-SNAPSHOT-jar-with-dependencies.jar app.jar
