@@ -5,20 +5,44 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
+    name: Build with Maven
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      - uses: actions/checkout@v2
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+      - name: Compile dependencies
+        run: mvn clean compile assembly:single
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  docker:
+    name: Publish - Docker Hub
+    runs-on: ubuntu-18.04
+    needs: [build]
+    env:
+      REPO: ${{ secrets.DOCKER_REPO }}
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.4
+      - name: Login to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
+      - name: Build Docker image
+        run: docker build --rm -f "src\docker\Dockerfile" -t $REPO:latest -t $REPO:${GITHUB_SHA::8} .
+      - name: Publish Docker image
+        run: docker push $REPO
