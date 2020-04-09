@@ -11,6 +11,7 @@ public class RepertoireCommandes {
     static {
         REPERTOIRE_COMMANDES.put("help", new Help());
         REPERTOIRE_COMMANDES.put("add", new Add());
+        REPERTOIRE_COMMANDES.put("feedback", new FeedBack());
         // animale commandes
         for (File especeAnimal : new File("./images/animaux/").listFiles())
             if (especeAnimal.isDirectory())
