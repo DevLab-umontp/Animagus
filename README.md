@@ -28,4 +28,4 @@ Pour cela rendez-vous sur le serveur discord dans le quelle se trouve Animagus [
 
 
 ### Finish !!
-Vous avez plus qu'à appuyer sur tous les boutons verts ! Félicitation pour ce premier commit sur le projet ! Le bot se chargera de se mettre à jour et ajouter votre nouvelle image à sa bibliothèque, une fois que deux de nos contributeurs auront validé votre requête (il suffit de les avoir fait sourire) 😉 N'hésitez à faire un tour dans le code !
+Vous avez plus qu'à appuyer sur tous les boutons verts ! Félicitation pour ce premier commit sur le projet ! Le bot se chargera de se mettre à jour et ajouter votre nouvelle image à sa bibliothèque, une fois que deux de nos contributeurs auront validé votre requête (il suffit de les avoir fait sourire) 😉 N'hésitez pas à faire un tour dans le code !
