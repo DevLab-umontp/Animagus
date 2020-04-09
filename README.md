@@ -11,7 +11,7 @@ Inspiré du sort [*animagus*](https://harrypotter.fandom.com/fr/wiki/Animagus) d
 [Cilquez ici pour l'inviter sur votre serveur !](https://discordapp.com/oauth2/authorize?client_id=692397138268651562&scope=bot&permissions=0)
 ## Comment contribuer facilement 
 
-Vous avez déjà croisé une photo/gif libre de droits d'animale drôle ? Hilarant ? Bah parfait ! Vous pouvez la déposer ici pour pouvoir la partager votre trouvaille avec les autres voici comment faire.
+Vous avez déjà croisé une photo/gif libre de droits d'animale drôle ? Hilarant ? Bah parfait ! Vous pouvez la déposer ici. Voici comment faire pour partager votre trouvaille :
 
 ### Première étape : Trouver une image représentant un animal
 
@@ -21,11 +21,11 @@ Bon nous ne recherons pas un sofa, mais bien un animal, effectuez la recherche d
 
 ### Deuxième étape : Ajouter l'image à la bibliothèque du bot
 
-Pour cela rendez-vous sur le serveur discord dans le quelle se trouve [(s'il est nul part, invitez le en cliquant ici)](https://discordapp.com/oauth2/authorize?client_id=692397138268651562&scope=bot&permissions=0). Une fois que vous vous trouvez face à face avec le Bot, lancer la commande `&add {votre animal favori}` par exemple `&add chien` si vous comptez ajouter une image de chien. Cliqué sur le lien qui est apparu et déposer votre image à l'intérieur de la page web :
+Pour cela rendez-vous sur le serveur discord dans le quelle se trouve Animagus [(s'il est nul part, invitez le en cliquant ici)](https://discordapp.com/oauth2/authorize?client_id=692397138268651562&scope=bot&permissions=0). Une fois que vous vous trouvez face à face avec le Bot, lancer la commande `&add {votre animal favori}` par exemple `&add chien` si vous comptez ajouter une image de chien. Cliqué sur le lien qui est apparu et déposer votre image à l'intérieur de la page web :
 
 
 ![batamn and robin](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F488%2Fscreenshots%2F1974667%2Fdrag-drop-upload-3.gif&f=1&nofb=1)
 
 
 ### Finish !!
-Vous avez plus qu'à appuyer sur tous les boutons verts ! Félicitation pour ce premier commit sur le projet ! Le bot se chargera de se mettre à jour et ajouter votre nouvelle image à sa bibliothèque, une fois que deux de nos contributeurs auront validé votre requête (il suffit de les avoir fait sourire) 😉 N'hésitez à faire un tour dans le code !
+Vous avez plus qu'à appuyer sur tous les boutons verts ! Félicitation pour ce premier commit sur le projet ! Le bot se chargera de se mettre à jour et ajouter votre nouvelle image à sa bibliothèque, une fois que deux de nos contributeurs auront validé votre requête (il suffit de les avoir fait sourire) 😉 N'hésitez pas à faire un tour dans le code !
