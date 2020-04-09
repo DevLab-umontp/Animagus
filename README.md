@@ -11,7 +11,7 @@ Inspiré du sort [*animagus*](https://harrypotter.fandom.com/fr/wiki/Animagus) d
 [Cilquez ici pour l'inviter sur votre serveur !](https://discordapp.com/oauth2/authorize?client_id=692397138268651562&scope=bot&permissions=0)
 ## Comment contribuer facilement 
 
-Vous avez déjà croisé une photo/gif libre de droits d'animale drôle ? Hilarant ? Bah parfait ! Vous pouvez la déposer ici pour pouvoir la partager votre trouvaille avec les autres voici comment faire.
+Vous avez déjà croisé une photo/gif libre de droits d'animale drôle ? Hilarant ? Bah parfait ! Vous pouvez la déposer ici. Voici comment faire pour partager votre trouvaille :
 
 ### Première étape : Trouver une image représentant un animal
 
