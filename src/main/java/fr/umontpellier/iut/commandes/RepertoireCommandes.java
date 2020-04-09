@@ -1,6 +1,5 @@
 package fr.umontpellier.iut.commandes;
 
-import java.io.File;
 import java.util.HashMap;
 
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
@@ -12,10 +11,7 @@ public class RepertoireCommandes {
         REPERTOIRE_COMMANDES.put("help", new Help());
         REPERTOIRE_COMMANDES.put("add", new Add());
         REPERTOIRE_COMMANDES.put("feedback", new FeedBack());
-        // animale commandes
-        for (File especeAnimal : new File("./images/animaux/").listFiles())
-            if (especeAnimal.isDirectory())
-                REPERTOIRE_COMMANDES.put(especeAnimal.getName(), new Animale(especeAnimal));
+        REPERTOIRE_COMMANDES.putAll(GestionnaireAnimaux.getCommandes());
     }
 
     /**
