@@ -7,11 +7,13 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
  * Help
  */
 class Help extends ListenerAdapter implements Commande {
-    private static final String AIDE = "**Voici les commandes *Animagus* disponibles :**\n ► `&{votre animal}` : par exemple `&chien` pour afficher l'image d'un chien.\n ► `&add {votre animal}` : par exemple `&add souris` pour ajouter l'image d'une souris.\n";
-
 
     @Override
     public void execute(Message messageRecue) {
-        messageRecue.getChannel().sendMessage(AIDE).queue();
+        final String AIDE = "**   Voici les commandes *Animagus* disponibles :**\n";
+        final String ANIMAL = "\n ► `&{votre animal}` : par exemple `&chien` pour afficher l'image d'un chien.";
+        final String ADD = "\n ► `&add {votre animal}` : par exemple `&add souris` pour ajouter l'image d'une souris.";
+        final String FEEDBACK = "\n ► `&feedback` : permet de faire un retour sur le bot.";
+        messageRecue.getChannel().sendMessage(AIDE + ANIMAL + ADD + FEEDBACK).queue();
     }
 }
