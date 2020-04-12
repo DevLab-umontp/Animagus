@@ -10,7 +10,7 @@ public class App {
      */
     private static final JDABuilder ANIMAGUS_BUILDER = new JDABuilder(AccountType.BOT)
             .addEventListeners(new GestionnaireEvents())
-            .setActivity(Activity.streaming("Animagus.umontp",
+            .setActivity(Activity.streaming("dire &animagus.umontp",
                     "https://vignette.wikia.nocookie.net/harrypotter/images/3/30/McGonagall_Animagus.gif/revision/latest?cb=20150715164411&path-prefix=fr"))
             .setCompression(Compression.NONE);
 

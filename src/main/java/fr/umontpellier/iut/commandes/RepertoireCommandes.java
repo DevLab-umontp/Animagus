@@ -9,6 +9,8 @@ public class RepertoireCommandes {
 
     static {
         REPERTOIRE_COMMANDES.put("help", new Help());
+        REPERTOIRE_COMMANDES.put("animagus", new Help());
+        REPERTOIRE_COMMANDES.put("animagus.umontp", new Help());
         REPERTOIRE_COMMANDES.put("add", new Add());
         REPERTOIRE_COMMANDES.put("feedback", new FeedBack());
         REPERTOIRE_COMMANDES.putAll(GestionnaireAnimaux.getCommandes());
