@@ -12,7 +12,7 @@ public class GestionnaireEvents extends ListenerAdapter {
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
-        AfficheMessageDansConsole(event);
+        afficheMessageDansConsole(event);
 
         if (animagusEstAppeleParUtilisateur(event)) {
             Commande cmd = RepertoireCommandes.getCommande(event);
@@ -21,7 +21,7 @@ public class GestionnaireEvents extends ListenerAdapter {
         }
     }
 
-    private void AfficheMessageDansConsole(MessageReceivedEvent event) {
+    private void afficheMessageDansConsole(MessageReceivedEvent event) {
         out.println(String.format("Message reçue de la part de %s : %s", event.getAuthor().getName(),
                 event.getMessage().getContentRaw()));
     }
