@@ -24,8 +24,8 @@
       <id>sonar</id>
       <properties>
         <sonar.sources>.</sonar.sources>
-        <sonar.inclusions>src/main/java/**,src/main/resources/**</sonar.inclusions>
-        <sonar.projectKey>MathieuSoysal_ProjetS3Voyageur</sonar.projectKey>
+        <sonar.inclusions>src/main/java/**,src/main/resources/**,images/animaux/**</sonar.inclusions>
+        <sonar.projectKey>MathieuSoysal_Animagus.umontp</sonar.projectKey>
         <sonar.organization>mathieusoysal</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
       </properties>
