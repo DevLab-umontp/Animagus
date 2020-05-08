@@ -20,7 +20,7 @@ class Add extends ListenerAdapter implements Commande {
     public static String getLien(String messageRecue) {
         String animalChoisi = messageRecue.substring(5).toLowerCase();
         return String.format(
-                "Clic sur le lien pour ajouter ton image de %s %s  %s  %s  :\n 📎 https://github.com/MathieuSoysal/Animagus.umontp/upload/master/images/animaux/%s \n",
+                "Clic sur le lien pour ajouter ton image de %s %s  %s  %s  :\n 📎 https://github.com/MathieuSoysal/Animagus.umontp/upload/master/images/animaux/%s \n N'oublie de te connecter avec ton compte GitHub avant",
                 animalChoisi, getRandomIcone(), getRandomIcone(), getRandomIcone(), animalChoisi);
     }
 
