@@ -44,11 +44,32 @@ cmake-build-debug/
 
 ## Plugin-specific files:
 
-#VS Code
-.vscode
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
 
 # IntelliJ
 /out/
+.idea
+*.ipr
+*.iml
+*.iws
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
