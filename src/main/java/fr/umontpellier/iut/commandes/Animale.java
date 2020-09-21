@@ -10,22 +10,22 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
  * Animale
  */
 class Animale extends ListenerAdapter implements Commande {
-    private final File[] fichiers;
-    
-    private File getFichierRandom() {
-        return fichiers[new Random().nextInt(fichiers.length)];
+    private final File[] IMAGES;
+
+    private File getImagesRandom() {
+        return IMAGES[new Random().nextInt(IMAGES.length)];
     }
 
     /**
      * 
      */
     public Animale(File especeAnimal) {
-        fichiers = especeAnimal.listFiles();
+        IMAGES = especeAnimal.listFiles();
     }
 
     @Override
     public void execute(Message messageRecue) {
-        messageRecue.getChannel().sendFile(getFichierRandom()).queue();
+        messageRecue.getChannel().sendFile(getImagesRandom()).queue();
 
     }
 }
