@@ -1,7 +1,7 @@
 package fr.umontpellier.iut.commandes;
 
 import java.io.File;
-import java.util.Random;
+import java.security.SecureRandom;
 
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -13,7 +13,7 @@ class Animale extends ListenerAdapter implements Commande {
     private final File[] fichiers;
     
     private File getFichierRandom() {
-        return fichiers[new Random().nextInt(fichiers.length)];
+        return fichiers[new SecureRandom().nextInt(fichiers.length)];
     }
 
     /**
