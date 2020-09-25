@@ -10,17 +10,17 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
  */
 class Add extends ListenerAdapter implements Commande {
 
-    static final String[] ICONES_ANIMAUX = { "🐵", "🐶", "🐺", "🐱", "🦁", "🐯", "🦒", "🦊", "🦝", "🐮", "🐷", "🐗",
-            "🐭", "🐹", "🐰", "🐻", "🐨", "🐼", "🐸", "🦓", "🐴", "🦄", "🐔", "🦧", "🦮", "🐕‍🦺", "🐩", "🐕", "🐈",
-            "🐅", "🐆", "🐎", "🦌", "🦏", "🦛", "🐂", "🐃", "🐄", "🐖", "🐏", "🐑", "🐐", "🐪", "🐫", "🦙", "🦘", "🦥",
-            "🦨", "🦡", "🐘", "🐁", "🐀", "🦔", "🐇", "🐿", "🦎", "🐊", "🐢", "🐍", "🦕", "🦖", "🦦", "🦈", "🐬", "🐳",
-            "🐋", "🐟", "🐠", "🐡", "🦐", "🦑", "🐙", "🦞", "🦀", "🦆", "🐓", "🦃", "🦅", "🕊", "🦢", "🦜", "🦩", "🦚",
-            "🦉", "🐦", "🐧", "🐥", "🐤", "🦇", "🦋", "🐌", "🐛", "🦟", "🦗", "🐜", "🐝", "🐞", "🦂", "🕷" };
+    private static final String[] ICONES_ANIMAUX = { "🐵", "🐶", "🐺", "🐱", "🦁", "🐯", "🦒", "🦊", "🦝", "🐮", "🐷", "🐗",
+            "🐭", "🐹", "🐰", "🐻", "🐨", "🐼", "🐸", "🦓", "🐴", "🦄", "🐔", "🦧", "🦮", "🐩", "🐕", "🐈", "🐅", "🐆",
+            "🐎", "🦌", "🦏", "🦛", "🐂", "🐃", "🐄", "🐖", "🐏", "🐑", "🐐", "🐪", "🐫", "🦙", "🦘", "🦥", "🦨", "🦡",
+            "🐘", "🐁", "🐀", "🦔", "🐇", "🐿", "🦎", "🐊", "🐢", "🐍", "🦕", "🦖", "🦦", "🦈", "🐬", "🐳", "🐋", "🐟",
+            "🐠", "🐡", "🦐", "🦑", "🐙", "🦞", "🦀", "🦆", "🐓", "🦃", "🦅", "🕊", "🦢", "🦜", "🦩", "🦚", "🦉", "🐦",
+            "🐧", "🐥", "🐤", "🦇", "🦋", "🐌", "🐛", "🦟", "🦗", "🐜", "🐝", "🐞", "🦂", "🕷" };
 
-    public static String getLien(String messageRecue) {
+    static String getLien(String messageRecue) {
         String animalChoisi = messageRecue.substring(5).toLowerCase();
         return String.format(
-                "Clic sur le lien pour ajouter ton image de %s %s  %s  %s  :\n 📎 https://github.com/MathieuSoysal/Animagus.umontp/upload/master/images/animaux/%s \n",
+                "Clic sur le lien pour ajouter ton image de %s %s  %s  %s  :%n 📎 https://github.com/MathieuSoysal/Animagus.umontp/issues/new?labels=Ajout+image&title=Ajout+image+de+%s&body=Glisser+votre+image+ici %n N'oublie de te connecter avec ton compte GitHub avant",
                 animalChoisi, getRandomIcone(), getRandomIcone(), getRandomIcone(), animalChoisi);
     }
 
