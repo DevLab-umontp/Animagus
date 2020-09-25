@@ -31,7 +31,7 @@ public class RepertoireCommandes {
         return msg.getMessage().getContentRaw().substring(1).split(" ")[0].toLowerCase();
     }
 
-    public RepertoireCommandes() {
+    private RepertoireCommandes() {
         throw new IllegalStateException("Utility class");
     }
 
