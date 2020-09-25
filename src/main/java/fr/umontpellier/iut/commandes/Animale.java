@@ -1,7 +1,7 @@
 package fr.umontpellier.iut.commandes;
 
 import java.io.File;
-import java.util.Random;
+import java.security.SecureRandom;
 
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -11,9 +11,9 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
  */
 class Animale extends ListenerAdapter implements Commande {
     private final File[] IMAGES;
-
+    
     private File getImagesRandom() {
-        return IMAGES[new Random().nextInt(IMAGES.length)];
+        return IMAGES[new SecureRandom().nextInt(IMAGES.length)];
     }
 
     /**

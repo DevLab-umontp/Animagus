@@ -1,6 +1,6 @@
 package fr.umontpellier.iut.commandes;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -25,7 +25,7 @@ class Add extends ListenerAdapter implements Commande {
     }
 
     private static String getRandomIcone() {
-        return ICONES_ANIMAUX[new Random().nextInt(ICONES_ANIMAUX.length)];
+        return ICONES_ANIMAUX[new SecureRandom().nextInt(ICONES_ANIMAUX.length)];
     }
 
     @Override
